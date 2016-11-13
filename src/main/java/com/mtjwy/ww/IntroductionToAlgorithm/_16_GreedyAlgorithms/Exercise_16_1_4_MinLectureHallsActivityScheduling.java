@@ -102,7 +102,7 @@ public class Exercise_16_1_4_MinLectureHallsActivityScheduling {
 			return intervals.toString();
 		}
 		
-		// define a comparator for interval, sort by starting time
+		// define a comparator for Hall, sort by starting time
 		private static class ByFinishTime implements Comparator<Hall> {
 			public int compare(Hall h1, Hall h2) {
 				return h1.finish - h2.finish;
