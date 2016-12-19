@@ -38,7 +38,8 @@ public class LongestRepeatedSubstring {
 			suffixes[i] = s.substring(i);
 		}
 		
-		Arrays.sort(suffixes);
+		//Arrays.sort(suffixes);
+		StringMsdRadixSort.sort(suffixes);
 		
 		String lrs = "";
 		for (int i = 0; i < N - 1; i++) {
